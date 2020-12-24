@@ -51,7 +51,7 @@ def updateListVCF():
         if len(line) == 0:
             break
 
-def setResultFile():
+def saveResultFile():
     global listForFasta
     fileResult = open('result.fasta','w')
     listForFile = []
@@ -85,4 +85,4 @@ f.close()
 fileVCF = open('2.vcf')
 updateListVCF()
 fileVCF.close()
-setResultFile()
+saveResultFile()
